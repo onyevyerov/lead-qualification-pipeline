@@ -5,6 +5,7 @@ from app.schemas import EnrichedLead
 
 
 def build_headers(api_key: str) -> dict:
+    """Build headers for Supabase REST API requests."""
     headers = {
         "apikey": api_key,
         "Content-Type": "application/json",
